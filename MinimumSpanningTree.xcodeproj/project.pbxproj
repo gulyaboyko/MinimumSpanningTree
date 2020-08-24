@@ -10,6 +10,10 @@
 		AEB81DE124E559DD00283C70 /* MinimumSpanningTree.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEB81DD724E559DD00283C70 /* MinimumSpanningTree.framework */; };
 		AEB81DE624E559DD00283C70 /* MinimumSpanningTreeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB81DE524E559DD00283C70 /* MinimumSpanningTreeTests.swift */; };
 		AEB81DE824E559DD00283C70 /* MinimumSpanningTree.h in Headers */ = {isa = PBXBuildFile; fileRef = AEB81DDA24E559DD00283C70 /* MinimumSpanningTree.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AEB81DF324E6A77400283C70 /* UnionFind.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB81DF224E6A77400283C70 /* UnionFind.swift */; };
+		AEB81DF424E6AA7600283C70 /* UnionFind.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB81DF224E6A77400283C70 /* UnionFind.swift */; };
+		AEB81DF624E6B69300283C70 /* MinimumSpanningTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB81DF524E6B69300283C70 /* MinimumSpanningTree.swift */; };
+		AEB81DF724E6B69500283C70 /* MinimumSpanningTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB81DF524E6B69300283C70 /* MinimumSpanningTree.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +33,8 @@
 		AEB81DE024E559DD00283C70 /* MinimumSpanningTreeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MinimumSpanningTreeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEB81DE524E559DD00283C70 /* MinimumSpanningTreeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimumSpanningTreeTests.swift; sourceTree = "<group>"; };
 		AEB81DE724E559DD00283C70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEB81DF224E6A77400283C70 /* UnionFind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnionFind.swift; sourceTree = "<group>"; };
+		AEB81DF524E6B69300283C70 /* MinimumSpanningTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimumSpanningTree.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +79,8 @@
 			children = (
 				AEB81DDA24E559DD00283C70 /* MinimumSpanningTree.h */,
 				AEB81DDB24E559DD00283C70 /* Info.plist */,
+				AEB81DF224E6A77400283C70 /* UnionFind.swift */,
+				AEB81DF524E6B69300283C70 /* MinimumSpanningTree.swift */,
 			);
 			path = MinimumSpanningTree;
 			sourceTree = "<group>";
@@ -148,6 +156,7 @@
 				TargetAttributes = {
 					AEB81DD624E559DD00283C70 = {
 						CreatedOnToolsVersion = 11.3;
+						LastSwiftMigration = 1130;
 					};
 					AEB81DDF24E559DD00283C70 = {
 						CreatedOnToolsVersion = 11.3;
@@ -195,6 +204,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEB81DF624E6B69300283C70 /* MinimumSpanningTree.swift in Sources */,
+				AEB81DF324E6A77400283C70 /* UnionFind.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,7 +213,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEB81DF424E6AA7600283C70 /* UnionFind.swift in Sources */,
 				AEB81DE624E559DD00283C70 /* MinimumSpanningTreeTests.swift in Sources */,
+				AEB81DF724E6B69500283C70 /* MinimumSpanningTree.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +352,7 @@
 		AEB81DEC24E559DD00283C70 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -356,6 +370,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.gulya.boiko.MinimumSpanningTree;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -363,6 +378,7 @@
 		AEB81DED24E559DD00283C70 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -387,6 +403,7 @@
 		AEB81DEF24E559DD00283C70 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = UBR9UU276M;
@@ -405,6 +422,7 @@
 		AEB81DF024E559DD00283C70 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = UBR9UU276M;
